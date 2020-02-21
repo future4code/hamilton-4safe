@@ -7,98 +7,221 @@ body {
     margin: 0;
     font-size: 16px;
     color: black;
-}
-
-header{
-    width: 100%;
-    height: 9%;
-    background-color:#698f69;
+    font-family: sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color:white;
+    outline: 1px;
+    outline-style: groove;
+    outline-color: black;
+}
+
+
+
+nav img{
+    height: 90%;
+    background-color: #3b4f66;
+    padding: 2px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+
+.subscribe-button{
+    background-color: #3b4f66;
+    width: 250px;
+    height: 100%;
+    transition: background-color .5s;
+    transition-timing-function: ease-out;
+    color: #698f69;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: flex;
     justify-content: center;
-
+    align-items: center;
+    text-align: center;
+    border: none;
 }
 
-header>img{
-    height: 50%;
-    background-color: #698f69;
-    padding-left: 3vw;
+.subscribe-button:hover{
+    background-color: #5b6c80;
 }
 
-#search{
-    min-width: 30%;
-    background-color: #698f69;
+#forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    right: -500px;
+    height: 100%;
+    width: 400px;
+    background-color: #b8bfc7;
+    border-left: 2px solid grey;
+    transition: right .5s;
+    transition-timing-function: ease-out;
 }
 
-input{
-    align-self: flex-end;
-    width: 40%;
-    border: 4px solid #ccc;
-    border-radius: 5px;
-    font-size: 1vw;
-    align-self: flex-end;
-    margin-left: 40%;
+#forms form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 500px;
 }
 
+#forms form div{
+    display: flex;
+    justify-content: space-between;
+}
 
+#forms label{
+    color: #3b4f66;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#forms input{
+    width: 250px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #3b4f66;
+    font-size: 20px;
+    border-bottom: 2px solid grey;
+}
+
+#check-box-div input{
+    width: 50px;
+}
+
+#check-box-div label{
+    font-size: 18px;
+}
+
+#forms p{
+    color: #3b4f66;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    width: 80%;
+}
+
+#forms form button{
+    background-color: #3b4f66;
+    border: none;
+    color: #b8bfc7;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+#forms form button:hover{
+    background-color: #5b6c80;
+}
+
+#close-form-button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #3b4f66;
+    background-color: #5b6c80;;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#black-overlay{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#spacing{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
 
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: white;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 main>div{
-    width: 100%;
+    width: 80%;
+    height: 90%;
     color: white;
-    background-color: #698f69;
+    background-color: #3b4f66;
     text-align: center;
+    justify-content: start;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    margin: 3vw 0;
+    border-radius: 1vw;
 }
 
 div>p:first-child{
     width: 100%;
     color: white;
-    background-color: #698f69;
+    background-color: #3b4f66;
     text-align: center;
     font-size: 2vw;
-    margin: 0 0;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+
 }
 
 div>p:last-child{
     width: 100%;
     color: white;
-    background-color: #698f69;
+    background-color: #3b4f66;
     text-align: center;
-    justify-content: start;
+    font-weight: 900;
+    margin: 0;
+
 }
 
-p{
-    width: 100%;
-    color: white;
-    background-color: #698f69;
-    text-align: center;
-    font-size: 1vw;
+#sub>p:first-child{
+    color: #698f69;
 }
+
 
 section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: ;
     max-width: 70%;
+    height: 75%;
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     border: #3b4f66 1px ridge;
-    border-bottom: none;
     background-color: #b8bfc7;
     border-radius: 1vw;
 }
@@ -106,35 +229,66 @@ section{
 section>div{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    min-width: 70%;
-
+    width: 80%;
+    height: auto;
 }
 
 
 .pessoas{
     display: flex;
     flex-direction: row;
+    height: 80%;
     padding: 1vw 1vw;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
 }
-.lista{
-    width: 20%;
+
+
+.profile{
+    width: 30%;
+    border-radius: 1vw;
+    padding-left: 1vw;
 }
+
 
 
 footer{
-    width: 100%;
-    height: 8%;
-    background-color:#698f69;
-    bottom: 0;
-    padding-top: 1vh;
-    font-weight: 700;
     display: flex;
-    align-items: ;
-    justify-content: center;
+    justify-content: flex-end;
+    flex: none;
+    background-color: #3b4f66;
+    height: 60px;
+    width: 100%;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    margin-right: 20px;
+}
+
+.socials a{
+    margin-left: 20px;
+    display: block;
+    height: 40px;
+    background-color: #b8bfc7;
+    border-radius: 10px;
+    padding: 1px;
+    transition: background-color .5s;
+}
+
+.socials a:hover{
+    background-color: #698f69;
 }
 
 
+.socials img{
+    height: 100%;
+}
 
 @media screen and (max-width: 930px){
 
