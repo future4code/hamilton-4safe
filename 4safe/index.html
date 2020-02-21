@@ -11,13 +11,24 @@
 
 <body>
 
-    <nav>
-        <img src="images/logo2.png" alt="logo">
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+
+            <ul>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">Equipe</a></li>
+                <li><a href="">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+
         <button onclick="ShowForm()" class="subscribe-button">
             Quero Tranquilidade!
             
         </button>
-    </nav>
+    </header>
 
     <button id="black-overlay" onclick="HideForm()"></button>
 
@@ -25,6 +36,14 @@
         <Button onclick="HideForm()" id="close-form-button">X</Button>
         <p>Preencha o formulário para entrarmos em contato com você!</p>
         <form action="">
+            <div>
+                <label for="safe">Modalidade do seguro:</label>
+                <select name="safe" id="safe" required>
+                    <option value="volvo">Vida</option>
+                    <option value="volvo">Carro</option>
+                    <option value="volvo">Ambos</option>
+                </select>
+            </div>
             <div>
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="name" required>
@@ -42,7 +61,9 @@
     </div>
 
     <main rule="main">
-        <section></section>
+        <section>
+            <img src="images/4safe.png" alt="4safe">
+        </section>
         <section></section>
         <section></section>
         <section></section>
