@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-faq.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>4Safe</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+
+            <ul>
+                <li><a href="../Quem-somos/index-quem-somos.html">Quem Somos</a></li>
+                <li><a href="../../joao/equipe.html">Equipe</a></li>
+                <li><a href="index-faq.html">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+
+        <button onclick="ShowForm()" class="subscribe-button">
+            Quero Tranquilidade!
+            
+        </button>
+    </header>
+
+    <button id="black-overlay" onclick="HideForm()"></button>
+
+    <div id="forms">
+        <Button onclick="HideForm()" id="close-form-button">X</Button>
+        <p>Preencha o formulário para entrarmos em contato com você!</p>
+        <form action="">
+            <div>
+                <label for="safe">Modalidade do seguro:</label>
+                <select name="safe" id="safe" required>
+                    <option value="volvo">Vida</option>
+                    <option value="volvo">Carro</option>
+                    <option value="volvo">Ambos</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id="check-box-div">
+                <input type="checkbox" name="contract" id="contract" required>
+                <label for="contract">Não li nada, concordo com tudo.</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <main rule="main">
+        <section>
+            <img src="images/4safe.png" alt="4safe">
+        </section>
+        <div>
+            <h3 id="title1">Perguntas frequentes<img src="icons8-seta-longa-abaixo-32.png"></h3> 
+        </div>
+        <section class="container1" id="container1">
+            <div class="faq-cliente-geral">
+                <ul class="faq">
+                    <li id="faq-text">
+                        <h3><i>Como posso contratar a 4Safe?</i></h3>
+                        <br>
+                        <p>Você pode contratar a 4Safe pelo nosso formulário, pela nossa central de atendimento (0800-666-666), pelas nossas redes sociais e pelo nosso aplicativo <i>Meu 4Safe</i>. </p>
+                    </li>
+                    <br>
+                    <li id="faq-text">
+                        <h3><i>Eu posso trocar de plano?</h3></h3>
+                        <br>
+                        <p>Você pode trocar de plano a qualquer momento, sem dificuldades e sem multas. Pode ser feito pelo seu aplicativo <i>Meu 4Safe</i> ou pela nossa central de atendimento.</p>
+                    </li>
+                    <br>
+                    <li id="faq-text">
+                        <h3><i>Quanto vou pagar por mês?</i></h3>
+                        <br>
+                        <p>Você vai pagar um valor fixo que é determinado pelos itens que sua cobertura cobre, mas não precisa ficar assustado! Você pode fazer uma simulação no nosso aplicativo <i>Meu 4Safe</i>.</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="facebook"></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

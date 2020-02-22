@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-faq.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>4Safe</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
+
+            <ul>
+                <li><a href="../Quem-somos/index-quem-somos.html">Quem Somos</a></li>
+                <li><a href="../../joao/equipe.html">Equipe</a></li>
+                <li><a href="index-faq.html">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+
+        <button onclick="ShowForm()" class="subscribe-button">
+            Quero Tranquilidade!
+            
+        </button>
+    </header>
+
+    <button id="black-overlay" onclick="HideForm()"></button>
+
+    <div id="forms">
+        <Button onclick="HideForm()" id="close-form-button">X</Button>
+        <p>Preencha o formulário para entrarmos em contato com você!</p>
+        <form action="">
+            <div>
+                <label for="safe">Modalidade do seguro:</label>
+                <select name="safe" id="safe" required>
+                    <option value="volvo">Vida</option>
+                    <option value="volvo">Carro</option>
+                    <option value="volvo">Ambos</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id="check-box-div">
+                <input type="checkbox" name="contract" id="contract" required>
+                <label for="contract">Não li nada, concordo com tudo.</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <main rule="main">
+        <section>
+            <img src="images/4safe.png" alt="4safe">
+        </section >
+        <section class="title">
+            <div>
+                <h3 id="title1">Perguntas frequentes</h3>
+                <br>
+                <h3 id="title2">Escolha um dos tópicos abaixo <br><img src="icons8-seta-longa-abaixo-32.png"></h3>  
+            </div>
+        </section>
+        <section class="container categories">
+            <ul class="grid-block">
+                <li class="grid-block-item1">
+                    <a href="index-sou-cliente.html" id="item-grid-block">
+                        <img class="block-link1" src="icons8-garantia-100.png">
+                        <h3 id="text">Sou cliente.</h3>
+                        <p id="text">Perguntas mais frequentes dos clientes 4Safe.</p>
+                    </a>
+                </li>
+                <br>
+                <li class="grid-block-item2">
+                    <a href="index-não-sou-cliente.html" id="item-grid-block">
+                        <img class="block-link2" src="icons8-cabeça-humana-64 (1).png">
+                        <h3 id="text">Não sou cliente.</h3>
+                        <p id="text">Perguntas mais frequentes dos não clientes.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="facebook"></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
