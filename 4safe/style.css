@@ -29,7 +29,7 @@ header{
     border-bottom: 1px solid black;
     outline: 1px;
     outline-style: groove;
-    outline-color: rgba(0, 0, 0, .2);
+    outline-color: rgba(0, 0, 0, .3);
 }
 
 nav{
@@ -63,15 +63,18 @@ nav ul{
 }
 
 nav li{
-    border-right: 2px solid #698f69;
+    /* border-right: 2px solid #698f69; */
+    border-right: 2px solid #96ce6d;
     padding: 10px 0;
     padding-right: 10px;
 }
 
 nav li a{
     text-decoration: none;
-    color: #698f69;
     font-size: 20px;
+    transition: background-color .5s;
+    
+    color: #698f69;
 }
 
 .subscribe-button{
@@ -80,7 +83,7 @@ nav li a{
     height: 100%;
     transition: background-color .5s;
     transition-timing-function: ease-out;
-    color: #698f69;
+    color: #96ce6d;
     font-weight: bold;
     font-size: 20px;
 
@@ -107,7 +110,7 @@ nav li a{
     width: 400px;
     background-color: #b8bfc7;
     border-left: 2px solid grey;
-    transition: right .5s;
+    transition: right .25s;
     transition-timing-function: ease-out;
 }
 
@@ -214,12 +217,29 @@ main{
 
 main section{
     display: flex;
-    height: 800px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
     background-color: #b8bfc7;
+    width: 100%;
+}
+
+main section > div{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-align: justify;
+    width: 50%;
 }
 
 main section:nth-of-type(odd){
     background-color: white;
+}
+
+main section:nth-of-type(odd) > div{
+    color: #96ce6d;
 }
 
 main section:nth-of-type(1){
@@ -253,7 +273,7 @@ footer{
     background-color: #b8bfc7;
     border-radius: 10px;
     padding: 1px;
-    transition: background-color .5s;
+    transition: background-color .25s;
 }
 
 .socials a:hover{
