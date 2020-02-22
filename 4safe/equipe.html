@@ -6,19 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="equipe.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
     <title>Sobre Nós</title>
 </head>
 
-<body>
+<body id="body">
 
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo2.png" alt="logo">
+            </a>
 
-    <nav>
-        <img src="images/logo2.png" alt="logo">
-        <button onclick="ShowForm()" class="subscribe-button">
+            <ul>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+
+        <button onclick="ShowForm()" class="subscribe-button" id=buttonmain>
             Quero Tranquilidade!
-            
+
         </button>
-    </nav>
+    </header>
+
+    <button id="black-overlay" onclick="HideForm()"></button>
+
+    <div id="forms">
+        <Button onclick="HideForm()" id="close-form-button">X</Button>
+        <p>Preencha o formulário para entrarmos em contato com você!</p>
+        <form action="">
+            <div>
+                <label for="safe">Modalidade do seguro:</label>
+                <select name="safe" id="safe" required>
+                    <option value="volvo">Vida</option>
+                    <option value="volvo">Carro</option>
+                    <option value="volvo">Ambos</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id="check-box-div">
+                <input type="checkbox" name="contract" id="contract" required>
+                <label for="contract">Não li nada, concordo com tudo.</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
     <div id=spacing>.</div>
 
@@ -36,22 +77,22 @@
 
                 <div class="pessoas">
                     <div>Alice Ando<br><br>CEO</div>
-                    <img  src="alice.jpg">
+                    <img  src="images/alice.jpg">
                 </div>
 
                 <div class="pessoas">
                     <div>Marçal Vando<br><br>Gerente Administrativo</div>
-                    <img class=profile src="marcal.jpg">
+                    <img class=profile src="images/marcal.jpg">
                 </div>
 
                 <div class="pessoas">
                     <div>Matilde Fender<br><br>Recursos Humanos</div>
-                    <img class=profile src="matilde.jpg">
+                    <img class=profile src="images/matilde.jpg">
                 </div>
 
                 <div class="pessoas">
                     <div>Senora do Perpétuo Socorro<br><br>Relacionamento com Cliente</div>
-                    <img class=profile src="senora.jpg">
+                    <img class=profile src="images/senora.jpg">
                 </div>
 
             </div>
