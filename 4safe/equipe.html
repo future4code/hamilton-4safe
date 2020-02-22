@@ -6,92 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="equipe.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
     <title>Sobre Nós</title>
 </head>
 
-<body id="body">
+<body>
 
-    <header>
-        <nav>
-            <a href="index.html">
-                <img src="images/logo2.png" alt="logo">
-            </a>
 
-            <ul>
-                <li><a href="">Quem Somos</a></li>
-                <li><a href="equipe.html">Equipe</a></li>
-                <li><a href="">Perguntas Frequentes</a></li>
-            </ul>
-        </nav>
-
-        <button onclick="ShowForm()" class="subscribe-button" id=buttonmain>
+    <nav>
+        <img src="images/logo2.png" alt="logo">
+        <button onclick="ShowForm()" class="subscribe-button">
             Quero Tranquilidade!
-
+            
         </button>
-    </header>
+    </nav>
 
-    <button id="black-overlay" onclick="HideForm()"></button>
-
-    <div id="forms">
-        <Button onclick="HideForm()" id="close-form-button">X</Button>
-        <p>Preencha o formulário para entrarmos em contato com você!</p>
-        <form action="">
-            <div>
-                <label for="safe">Modalidade do seguro:</label>
-                <select name="safe" id="safe" required>
-                    <option value="volvo">Vida</option>
-                    <option value="volvo">Carro</option>
-                    <option value="volvo">Ambos</option>
-                </select>
-            </div>
-            <div>
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div id="check-box-div">
-                <input type="checkbox" name="contract" id="contract" required>
-                <label for="contract">Não li nada, concordo com tudo.</label>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-
-    <div id=spacing></div>
+    <div id=spacing>.</div>
 
     <main role=main>
-        <div id=sub>
+        <div>
             <p>EQUIPE</p>
-
-            <p>A 4Safe é uma empresa de seguros que acredita que segurança é uma 
-                combinação de eficiência e tranquilidade.<br>Estar seguro é estar tranquilo.</p>
-       
+        </div>
+        <div id=sub>
+            <p>
+            Na 4Safe a tranquilidade vem da nossa equipe.
+            </p>
 
             <section>
             <div>
 
-                <div class=pessoas>
-                    <div><b>Alice Ando<br>CEO</b></div>
-                    <img class=profile src="images/alice.jpg"><img>
+                <div class="pessoas">
+                    <div>Alice Ando<br><br>CEO</div>
+                    <img  src="alice.jpg">
                 </div>
 
-                <div class=pessoas>
-                    <div><b>Marçal Vando<br>Gerente Administrativo</b></div>
-                    <img class=profile src="images/marcal.jpg"><img>
+                <div class="pessoas">
+                    <div>Marçal Vando<br><br>Gerente Administrativo</div>
+                    <img class=profile src="marcal.jpg">
                 </div>
 
-                <div class=pessoas>
-                    <div><b>Matilde Fender<br>Recursos Humanos</b></div>
-                    <img class=profile src="images/matilde.jpg"><img>
+                <div class="pessoas">
+                    <div>Matilde Fender<br><br>Recursos Humanos</div>
+                    <img class=profile src="matilde.jpg">
                 </div>
 
-                <div class=pessoas>
-                    <div><b>Senora do Perpétuo Socorro<br>Relacionamentos</b></div>
-                    <img class=profile src="images/senora.jpg"><img>
+                <div class="pessoas">
+                    <div>Senora do Perpétuo Socorro<br><br>Relacionamento com Cliente</div>
+                    <img class=profile src="senora.jpg">
                 </div>
 
             </div>
