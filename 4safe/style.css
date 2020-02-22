@@ -16,6 +16,12 @@ body{
     flex-direction: column;
 }
 
+
+
+
+
+/* HEADER STYLE */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -47,6 +53,13 @@ header img{
     background-color: #3b4f66;
     border-radius: 20px;
 }
+
+
+
+
+
+
+/* NAV STYLE */
 
 nav{
     display: flex;
@@ -96,6 +109,14 @@ nav li a{
 .subscribe-button:hover{
     background-color: #5b6c80;
 }
+
+
+
+
+
+
+
+/* FORMS STYLE */
 
 #forms{
     display: flex;
@@ -208,6 +229,13 @@ nav li a{
     border: none;
 }
 
+
+
+
+
+
+/* MAIN CONTENT STYLE */
+
 main{
     display: flex;
     flex: 1;
@@ -317,7 +345,7 @@ main section:nth-of-type(3)>div{
 }
 
 #subhead2>img{
-    height: 50%%;
+    height: 50%;
     width: 100%;
     border-radius: 1vw;
     border: solid 3px #96ce6d;
@@ -357,6 +385,13 @@ section:last-of-type>div>div{
 
 }
 
+
+
+
+
+
+/* FOOTER STYLE */
+
 footer{
     display: flex;
     justify-content: flex-end;
@@ -366,14 +401,14 @@ footer{
     width: 100%;
 }
 
-.socials{
+.social-network-buttons{
     display: flex;
     align-items: center;
     height: 100%;
     margin-right: 20px;
 }
 
-.socials a{
+.social-network-buttons a{
     margin-left: 20px;
     display: block;
     height: 40px;
@@ -383,11 +418,11 @@ footer{
     transition: background-color .25s;
 }
 
-.socials a:hover{
+.social-network-buttons a:hover{
     background-color: #698f69;
 }
 
 
-.socials img{
+.social-network-buttons img{
     height: 100%;
 }

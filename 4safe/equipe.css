@@ -1,4 +1,28 @@
 *{
+<<<<<<< HEAD:joao/equipe.css
+=======
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: 0;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    width: 100vw;
+    height: 150vh;
+>>>>>>> 701fb6a3b393e36760531560fa424dcdbc639953:4safe/equipe.css
     padding: 0;
     margin: 0;
 }
@@ -13,7 +37,7 @@ body {
     flex-direction: column;
 }
 
-nav{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,32 +47,73 @@ nav{
     width: 100%;
     height: 6vw;
     background-color:white;
+    border-bottom: 1px solid black;
     outline: 1px;
     outline-style: groove;
-    outline-color: black;
+    outline-color: rgba(0, 0, 0, .3);
 }
 
+nav{
+    height: 100%;
+}
 
-
-nav img{
+header a{
     height: 90%;
-    background-color: #3b4f66;
-    padding: 2px;
-    border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 10px; 
 }
 
+header img{
+    height: 100%;
+    padding: 5px;
+    background-color: #3b4f66;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* NAV STYLE */
+
+nav{
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav li{
+    /* border-right: 2px solid #698f69; */
+    border-right: 2px solid #96ce6d;
+    padding: 10px 0;
+    padding-right: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color .5s;
+    
+    color: #698f69;
+}
 
 .subscribe-button{
     background-color: #3b4f66;
     width: 250px;
-    height: 100%;
+    height: 6vw;
     transition: background-color .5s;
     transition-timing-function: ease-out;
-    color: #698f69;
+    color: #96ce6d;
     font-weight: bold;
     font-size: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +124,14 @@ nav img{
 .subscribe-button:hover{
     background-color: #5b6c80;
 }
+
+
+
+
+
+
+
+/* FORMS STYLE */
 
 #forms{
     display: flex;
@@ -71,7 +144,7 @@ nav img{
     width: 400px;
     background-color: #b8bfc7;
     border-left: 2px solid grey;
-    transition: right .5s;
+    transition: right .25s;
     transition-timing-function: ease-out;
 }
 
@@ -87,6 +160,7 @@ nav img{
 #forms form div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #forms label{
@@ -102,6 +176,15 @@ nav img{
     color: #3b4f66;
     font-size: 20px;
     border-bottom: 2px solid grey;
+}
+
+#forms select{
+    width: 100px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #3b4f66;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 #check-box-div input{
@@ -159,6 +242,11 @@ nav img{
     height: 100%;
     border: none;
 }
+
+
+
+
+
 
 #spacing{
     height: 6vw;
@@ -302,4 +390,4 @@ footer{
 
 @media screen and (max-width: 930px){
 
-    
+}
