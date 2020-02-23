@@ -259,7 +259,7 @@ main section{
 
 
 main section > div{
-    color: #90cc65;
+    color: #96ce6d;
     font: 10px;
     width: 70%;
     height: 85%;
@@ -291,7 +291,7 @@ section>div>span:first-child{
 
 section>div>div{
     margin-top: 2vw;
-    
+    border-radius: 4%;
 }
 
 main section:nth-of-type(odd){
