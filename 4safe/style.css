@@ -260,6 +260,7 @@ main section{
 
 main section > div{
     color: #90cc65;
+    font: 10px;
     width: 70%;
     height: 85%;
     margin: 2vw 12vw 0 9vw;
