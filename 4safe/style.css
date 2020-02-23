@@ -427,3 +427,11 @@ footer{
 .social-network-buttons img{
     height: 100%;
 }
+
+/*responsividade Iphone 6/7/8 375px*/
+
+
+@media screen and (max-width: 375px){
+    
+
+}

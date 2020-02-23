@@ -365,6 +365,9 @@ footer{
     height: 100%;
 }
 
-@media screen and (max-width: 930px){
+/*responsividade Iphone 6/7/8 375px*/
 
+@media screen and (max-width: 375px){
+   
+    
 }

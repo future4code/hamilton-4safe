@@ -304,3 +304,11 @@ footer{
     padding: 20px 50px 20px 50px;
     
 }
+
+/*responsividade Iphone 6/7/8 375px*/
+
+@media screen and (max-widht: 375px){
+
+   
+    
+}
