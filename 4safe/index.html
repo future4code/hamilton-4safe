@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>4Safe</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo2.png" alt="Imagem de desenho de cavalo feito com linhas retas verdes em fundo azul escuro">
+            </a>
+
+            <ul>
+                <li><a href="../hamilton-4safe/Quem-somos/index-quem-somos.html">Quem Somos</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="../hamilton-4safe/FAQ/index-faq.html">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+
+        <button onclick="ShowForm()" class="subscribe-button" id=buttonmain>
+            Quero Tranquilidade!
+
+        </button>
+    </header>
+
+    <button id="black-overlay" onclick="HideForm()"></button>
+
+    <div id="forms">
+        <Button onclick="HideForm()" id="close-form-button">X</Button>
+        <p>Preencha o formulário para entrarmos em contato com você!</p>
+        <form action="">
+            <div>
+                <label for="safe">Modalidade do seguro:</label>
+                <select name="safe" id="safe" required>
+                    <option value="volvo">Vida</option>
+                    <option value="volvo">Carro</option>
+                    <option value="volvo">Ambos</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id="check-box-div">
+                <input type="checkbox" name="contract" id="contract" required>
+                <label for="contract">Não li nada, concordo com tudo.</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <main rule="main">
+
+        <section>
+            <div>
+                <span>Para ser seguro, não precisa ser difícil.</span>
+                <span><strong>Na 4Safe você consegue o melhor que o mercado pode 
+                oferecer no seguro do seu carro e no seguro da sua vida.<br>
+                 Fique seguro. <br>
+                 <u>Fique tranquilo</u>.<br>
+                 Junte-se a nós.</strong></span><br>
+                
+                <div>
+                    <button onclick="ShowForm()" class="subscribe-button">
+                    Quero Tranquilidade!
+                    </button>
+                </div>
+
+            </div>             
+            <img src="images/4safe.png" alt="Imagem do logotipo da four-safe com a escrita: four-safe seguros, a tranquilidade na palma da mão."></img>
+        </section>
+
+        <section>
+            <div id="subhead">
+                <span>Acesse seu seguro pelo celular</span><br>
+                <span>Acompanhe, atualize e pague seu seguro sem sair de casa.</span>
+            </div>          
+            
+            <div id="subhead2">
+                <img src="images/phone.jpg" alt="imagem de mulher jovem, sorrindo olhando para o celular, enquanto está em casa sentada no sofá."></img>
+            </div>
+        </section>
+
+        <section>
+            <div id=social>
+                <img src="images/woman1.jpg" alt="imagem de mulher jovem, negra, cabelo curto, sorrindo."></img>
+                <p>"Na 4safe fiz meu primeiro seguro de carro, porque antes eu preferia correr mais risco 
+                    para ter menos dor de cabeça"<br><br>
+                    <b>Ale Goria - 24 anos</b>
+                </p>
+            </div>
+            <div id=social>
+                <img src="images/couple1.jpg" alt="imagem de casal, jovem, sorrindo, um abraçando o outro."></img>
+                <p>"Na 4Safe consegui a praticidade que procurava, podendo fazer um pacote 
+                    mais barato junto com minha esposa! Tem sido uma tranquilidade"<br><br>
+                    <b>Dioniso Lado - 30 anos</b>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                A 4Safe iniciou seu trabalho há 4 anos, por entender que é possível oferecer um serviço de eficiente, 
+                barato <br>e de alta qualidade.<br>
+                Desde que abrimos as portas já demos segurança e tranquilidade há mais
+                de 20.000 pessoas, <br>em todas as regiões do país.<br><br>
+                Faça uma simulação do seguro do seu carro <br>e do seu seguro de vida. <br>Entre em contato com a gente!
+
+                <div>
+                    <button onclick="ShowForm()" class="subscribe-button">
+                    Quero Tranquilidade!
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-network-buttons">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="icone de identificação do facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="icone de identificação do twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="icone de identificação do instagram"></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

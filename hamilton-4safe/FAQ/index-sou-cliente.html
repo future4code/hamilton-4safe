@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-faq.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>4Safe</title>
+</head>
+
+<body id="body">
+
+    <header>
+        <nav>
+            <a href="../../4safe/index.html">
+                <img src="images/logo2.png" alt="Imagem de desenho de cavalo feito com linhas retas verdes em fundo azul escuro">
+            </a>
+
+            <ul>
+                <li><a href="../Quem-somos/index-quem-somos.html">Quem Somos</a></li>
+                <li><a href="../../4safe/equipe.html">Equipe</a></li>
+                <li><a href="index-faq.html">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+
+        <button onclick="ShowForm()" class="subscribe-button">
+            Quero Tranquilidade!
+            
+        </button>
+    </header>
+
+    <button id="black-overlay" onclick="HideForm()"></button>
+
+    <div id="forms">
+        <Button onclick="HideForm()" id="close-form-button">X</Button>
+        <p>Preencha o formulário para entrarmos em contato com você!</p>
+        <form action="">
+            <div>
+                <label for="safe">Modalidade do seguro:</label>
+                <select name="safe" id="safe" required>
+                    <option value="volvo">Vida</option>
+                    <option value="volvo">Carro</option>
+                    <option value="volvo">Ambos</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div id="check-box-div">
+                <input type="checkbox" name="contract" id="contract" required>
+                <label for="contract">Não li nada, concordo com tudo.</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <main rule="main">
+        <section>
+            <img src="images/4safe.png" alt="Imagem do logotipo da four-safe com a escrita: four-safe seguros, a tranquilidade na palma da mão.">
+        </section>
+        <div>
+            <h3 id="title1">Perguntas frequentes</h3>
+            <br>
+            <h3 id="title2">dos nossos clientes <br><img src="icons8-seta-longa-abaixo-32.png" alt="imagem de seta apontado para baixo."></h3>  
+        </div>
+        <section class="container1" id="container1">
+            <div class="faq-cliente-geral">
+                <ul class="faq">
+                    <li id="faq-text">
+                        <h3><i>Como mudar meu plano?</i></h3>
+                        <br>
+                        <p>Você pode mudar de plano a qualquer momento ligando em nossa central de atendimento (0800-666-666), ou pelo nosso formulário de contato. </p>
+                    </li>
+                    <br>
+                    <li id="faq-text">
+                        <h3><i>Como saber o que minha apólice cobre?</h3></h3>
+                        <br>
+                        <p>No contrado da sua apólice no item <i>Cobertura</i> você encontra todas as informações sobre a cobertura do seu plano. Você tembém pode entrar em contato pela nossa central de atencimento (0800-666-666) ou pelo nosso formulário. </p>
+                    </li>
+                    <br>
+                    <li id="faq-text">
+                        <h3><i>Como cancelar meu plano?</i></h3>
+                        <br>
+                        <p>Você pode cancelar o seu plano de forma fácil e rápida, pelo nossa central de atendimento, pelo nosso aplicativo <i>Meu 4Safe</i> ou pelo nosso formulário de contato. </p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="icone de identificação do facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="icone de identificação do twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="icone de identificação do instagram"></a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
